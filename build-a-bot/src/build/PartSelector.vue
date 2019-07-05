@@ -28,19 +28,7 @@ function getNextValidIndex(index, length) {
 
 export default {
   // Could also just use a array of strings like props:['parts', 'position']
-  props: { 
-    parts: { 
-      type: Array,
-      required: true, 
-    }, 
-    position: { 
-      type: String,
-      required: true ,
-      validator: function(value) {
-        return ['left', 'right', 'bottom', 'center'].includes(value);
-      }
-    } 
-  },
+  props: ['position', 'parts'],
   data() {
     return { selectedPartIndex: 0 };
   },

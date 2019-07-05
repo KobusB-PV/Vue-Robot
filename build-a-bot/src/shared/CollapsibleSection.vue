@@ -6,6 +6,7 @@
         </div>
         <!-- Toggleable content -->
         <slot v-if="open">
+            <div>123</div>
             <!-- If nothing added inside parent with in CollapsibleSections
             then if anything added here will be displayed
             <div>
